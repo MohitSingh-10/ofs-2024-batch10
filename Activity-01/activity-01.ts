@@ -7,6 +7,7 @@
  */
 import * as AccUtils from "../accUtils";
 import * as ko from 'knockout';
+import 'oj-c/form-layout'
 import "oj-c/input-text";
 import "ojs/ojknockout";
 import 'oj-c/input-password';
