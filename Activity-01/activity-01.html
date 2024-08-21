@@ -4,82 +4,77 @@
  as shown at https://oss.oracle.com/licenses/upl/
  -->
  <div class="oj-hybrid-padding">
-    <h1>Activity 1</h1>
-    <!-- Form layout -->
-    <oj-c-form-layout
-                  id="formLayoutOptions"
-                  max-columns="2"
-                  direction="row"
-                 >
-    
+  <h1>Activity 1</h1>
+  <!-- Form layout -->
+  <oj-c-form-layout
+                id="formLayoutOptions"
+                max-columns="2"
+                direction="row"
+               >
+  
 
 <!-- Adding input text -->
-     <!-- <h2>1. Input Text</h2> -->
- <!-- <oj-c-form-control column-span="2"> -->
-    <oj-c-input-text
-                  id="text-input"
-                  raw-value="{{name}}" 
-                  label-hint="Enter name"
-                  label-edge="inside"></oj-c-input-text>
-    <p><b>Name: <oj-bind-text value = "[[name]]"/></b></p>
- <!-- </oj-c-form-control> -->
+   <!-- <h2>1. Input Text</h2> -->
+  <oj-c-input-text
+                id="text-input"
+                raw-value="{{name}}" 
+                label-hint="Enter name"
+                label-edge="inside"></oj-c-input-text>
+  <p><b>Name: <oj-bind-text value = "[[name]]"/></b></p>
 
 
 <!-- Adding secret input -->
-    <!-- <oj-c-form-control column-span="2"> -->
-    <!-- <h2>2. Input Secret</h2> -->
-      <oj-c-input-password value="{{pswd}}" label-hint="Enter Password"></oj-c-input-password>
-    <!-- </oj-c-form-control> -->
-  
+  <!-- <h2>2. Input Secret</h2> -->
+    <oj-c-input-password value="{{pswd}}" label-hint="Enter Password"></oj-c-input-password>
+
 
 
 
 <!-- Adding date time input -->
-  <oj-input-date-time value="{{date}}" label-hint="Enter DOB"></oj-input-date-time>
-    <!-- <p><b>DOB: <oj-bind-text value = "[[date]]"/></b></p> -->
+<oj-input-date-time value="{{date}}" label-hint="Enter DOB"></oj-input-date-time>
+  <!-- <p><b>DOB: <oj-bind-text value = "[[date]]"/></b></p> -->
 
-  <oj-c-radioset
-                id="rowDirectionEnabledRadioset"
-                value="{{genderValue}}"
-                direction="row"
-                label-hint="Enter Gender" 
-                options="{{gender}}" ></oj-c-radioset>
-                <p><b>Gender: <oj-bind-text value = "[[genderValue]]"/></b></p>
-
-
- <!-- Adding checkbox -->
-    <oj-c-checkboxset
-                id="rowDirectionEnabledCheckboxset"
-                value='{{subjectValue}}'
-                direction="row"
-                options="[[subject]]"
-                label-hint="Select Subjects"></oj-c-checkboxset>
-                <p><b>Subject(s): <oj-bind-text value = "[[subjectValue]]"/></b></p>
+<oj-c-radioset
+              id="rowDirectionEnabledRadioset"
+              value="{{genderValue}}"
+              direction="row"
+              label-hint="Enter Gender" 
+              options="{{gender}}" ></oj-c-radioset>
+              <p><b>Gender: <oj-bind-text value = "[[genderValue]]"/></b></p>
 
 
-
-  <!-- Adding Dropdown -->
-    <oj-c-select-single
-                options="[[education]]"
-                item-text="label"
-                value="{{educationValue}}"
-                label-hint="Select Education"></oj-c-select-single>
-                <p><b>Education: <oj-c-bind-text value = "[[educationValue]]"/></b></p>
-  </oj-c-form-layout>
+<!-- Adding checkbox -->
+  <oj-c-checkboxset
+              id="rowDirectionEnabledCheckboxset"
+              value='{{subjectValue}}'
+              direction="row"
+              options="[[subject]]"
+              label-hint="Select Subjects"></oj-c-checkboxset>
+              <p><b>Subject(s): <oj-bind-text value = "[[subjectValue]]"/></b></p>
 
 
 
-   <!-- Adding Progress Bar -->
-   <oj-progress-bar value="[[progressValue]]"></oj-progress-bar>
+<!-- Adding Dropdown -->
+  <oj-c-select-single
+              options="[[education]]"
+              item-text="label"
+              value="{{educationValue}}"
+              label-hint="Select Education"></oj-c-select-single>
+              <p><b>Education: <oj-c-bind-text value = "[[educationValue]]"/></b></p>
+</oj-c-form-layout>
 
 
 
-   <!-- Adding button -->
-   <oj-c-button id="button1" on-oj-action="[[buttonClick]]" label="Alert Hello World"></oj-c-button>
-  </div>
+ <!-- Adding Progress Bar -->
+ <oj-progress-bar value="[[progressValue]]"></oj-progress-bar>
+
+
+
+ <!-- Adding button -->
+ <oj-c-button id="button1" on-oj-action="[[buttonClick]]" label="Alert Hello World"></oj-c-button>
+</div>
 
 
 
 
-  
-  
+
